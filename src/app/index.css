@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════
+   Design Tokens — edit here to retheme
+   ═══════════════════════════════════════ */
+:root {
+  /* Backgrounds */
+  --background: #0a0a0f;
+  --surface: #0f0f1a;
+  --surface-elevated: #141428;
+
+  /* Brand / Accent */
+  --primary: #3b82f6;
+  --primary-muted: rgba(59, 130, 246, 0.15);
+  --secondary: #06b6d4;
+  --secondary-muted: rgba(6, 182, 212, 0.15);
+  --muted: #1e1e2e;
+
+  /* Text / Foreground */
+  --foreground: #f8fafc;
+  --primary-foreground: #ffffff;
+  --secondary-foreground: #94a3b8;
+  --muted-foreground: #475569;
+
+  /* Border */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(59, 130, 246, 0.3);
+
+  /* Gradient shortcuts */
+  --gradient-brand: linear-gradient(135deg, #3b82f6, #06b6d4);
+  --gradient-glow: radial-gradient(ellipse 80% 60% at 50% -20%, rgba(59, 130, 246, 0.25), transparent);
+}
+
+/* ═══════════════════════════════════════
+   Tailwind Utility Mapping (Tailwind v4)
+   ═══════════════════════════════════════ */
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-foreground: var(--foreground);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  --font-sans: "Space Grotesk", "Inter", system-ui, sans-serif;
+
+  --shadow-glow-primary: 0 0 24px rgba(59, 130, 246, 0.35);
+  --shadow-glow-secondary: 0 0 24px rgba(6, 182, 212, 0.35);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ═══════════════════════════════════════
+   Global Base Styles
+   ═══════════════════════════════════════ */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+/* Section anchor offset for fixed navbar */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Cursor blinking for typewriter */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
