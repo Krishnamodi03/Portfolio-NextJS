@@ -23,7 +23,7 @@
   --muted-foreground: #475569;
 
   /* Border */
-  --border: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.8);
   --border-accent: rgba(59, 130, 246, 0.3);
 
   /* Gradient shortcuts */
