@@ -2,7 +2,8 @@
 
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { GithubIcon } from "@/components/icons";
 import TechBadge from "@/components/ui/TechBadge";
 import type { Project } from "@/types";
 
@@ -56,7 +57,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="GitHub"
               >
-                <Github className="w-4 h-4" />
+                <GithubIcon className="w-4 h-4" />
               </a>
             )}
             {project.live && (

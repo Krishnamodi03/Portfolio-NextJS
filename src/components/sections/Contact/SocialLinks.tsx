@@ -1,20 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/icons";
 
 const SOCIALS = [
   {
-    icon: Github,
-    href: "https://github.com/krishnaWeb4next",
+    icon: GithubIcon,
+    href: "https://github.com/Krishnamodi03",
     label: "GitHub",
-    value: "krishnaWeb4next",
+    value: "Krishnamodi03",
   },
   {
-    icon: Linkedin,
-    href: "https://linkedin.com/in/krishna-modi",
+    icon: LinkedinIcon,
+    href: "https://www.linkedin.com/in/krishna-modi-658a7623a",
     label: "LinkedIn",
-    value: "linkedin.com/in/krishna-modi",
+    value: "Krishna Modi",
   },
   {
     icon: Mail,
